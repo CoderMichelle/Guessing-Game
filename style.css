@@ -1,0 +1,24 @@
+   /* starts with an element to select, key value pairs for specific lelment properties*/
+   body {
+    background-color: rgb(247, 225, 229);
+  }
+
+  h1 {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid coral;
+  }
+
+  p {
+    padding: 1rem;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  main p {
+    font-size: 26px;
+    padding: 30px 40px;
+  }

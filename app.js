@@ -1,5 +1,7 @@
-'use strict'
+// 'use strict'
 //Get data from the user - question 1
+var userName;
+var countryString;
 
 function greeting() {
   var userName = prompt('What is your name?');
@@ -8,11 +10,12 @@ function greeting() {
   alert(response1 + userName);
 
   console.log('The users name is ' + userName);
-}
+  // return userName;
+  // }
 
-// question 2
+  // question 2
 
-function location() {
+  // function livesIn() {
   var city = prompt('Does Michelle live in Seattle, WA?');
   var city = city.toLowerCase()
   console.log(city)
@@ -21,11 +24,11 @@ function location() {
   } else {
     alert('Yes, you are correct');
   }
-}
+  // }
 
-// question 3
+  // question 3
 
-function cat() {
+  // function pet() {
   var pet = prompt('Does Michelle have a pet? Please answer Yes or No');
   var pet = pet.toLowerCase();
   console.log('Does Michelle have a pet ?' + pet);
@@ -34,11 +37,11 @@ function cat() {
   } else {
     alert('No, that is incorrect, Michelle does have a pet cat named \'Annabelle.\'!');
   }
-}
+  // }
 
-// question 4
+  // question 4
 
-function born() {
+  // function born() {
   var origin = prompt('Is Michelle from WA? Please answer Yes or No');
   var origin = origin.toLowerCase();
   console.log('Is Michelle from WA' + origin);
@@ -47,11 +50,11 @@ function born() {
   } else {
     alert('No, Michelle is not originally from WA');
   }
-}
+  // }
 
-// question 5
+  // question 5
 
-function education() {
+  // function education() {
   var college = prompt('Does Michelle have a college degree?');
   var college = college.toLowerCase();
   console.log('Does Michelle have a college degree' + college)
@@ -60,11 +63,11 @@ function education() {
   } else {
     alert('No, actually Michelle does have a Bachelors Degree from The Evergreen State College');
   }
-}
+  // }
 
-// question 6
+  // question 6
 
-function secret() {
+  // function secret() {
   var correctNumber = 5;
   for (var i = 0; i < 4; i++) {
     var Q6 = prompt('Guess a number between 1 and 10');
@@ -77,16 +80,16 @@ function secret() {
       break;
     }
   }
-}
+  // }
 
-// question 7
+  // question 7
 
-function vacation() {
+  // function vacation() {
   var place = ['Egypt', 'Dubai', 'South Africa', 'New Zealand', 'Scotland', 'Morocco', 'Hungary', 'India', 'Viet Nam', 'Indonesia',];
   var arrayofAnswers = [];
   var correctAnswer2 = 0;
   var counter = 0;
-  for (var i = 0; i < 6; i++) {
+  for (var b = 0; b < 6; b++) {
     var answer = prompt('Guess Michelles top country to go see');
     var counter = arrayofAnswers.length;
     for (var a = 0; a < place.length; a++) {
@@ -107,16 +110,18 @@ function vacation() {
 
   alert('Congratulations! you got ' + arrayofAnswers.length + ' correct countries.');
   var countryString = '';
-  for (i = 0; i < arrayofAnswers.length; i++) {
-    countryString = countryString + arrayofAnswers[i] + ', ';
+  for (c = 0; c < arrayofAnswers.length; c++) {
+    countryString = countryString + arrayofAnswers[c] + ', ';
   }
-  alert(countryString + 'Thanks for visiting my website, ' + userName + '!');
+  // return countryString;
+
+  alert(userName + ' Thanks for visiting my website, ' + countryString + ' - the countries that you guessed correctly !');
 }
 
-greeting()
-location()
-cat()
-born()
-education()
-secret()
-vacation()
+greeting();
+// livesIn();
+// pet();
+// born();
+// education();
+// secret();
+// vacation();
